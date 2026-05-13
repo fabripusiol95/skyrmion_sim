@@ -1,0 +1,24 @@
+# Skyrmion simulation summary — euler_test
+# Velocities averaged over the last 50% of thermo samples
+nx            16
+ny            16
+N             256
+n_sk          1.60000000e-01
+Lx            3.72241944e+01
+Ly            3.22370980e+01
+alpha         1.00000000e+00
+G_z           7.91795842e-01
+K1            1.00000000e+00
+lambda        1.00000000e+00
+n_p           2.00000000e-01
+N_pins        240
+f_p           3.00000000e-02
+r_p           5.00000000e-01
+F_D           4.00000000e-03
+drive_angle   0.00000000e+00
+t_max         5.00000000e+02
+n_samples     5001
+vx_avg        1.68718989e-03
+vy_avg        -6.33973989e-04
+vmag_avg      1.80236865e-03
+theta_H_deg   -2.05940785e+01

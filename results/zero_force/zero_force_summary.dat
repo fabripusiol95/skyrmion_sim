@@ -1,0 +1,24 @@
+# Skyrmion simulation summary — zero_force
+# Velocities averaged over the last 50% of thermo samples
+nx            16
+ny            16
+N             256
+n_sk          1.60000000e-01
+Lx            3.72241944e+01
+Ly            3.22370980e+01
+alpha         1.00000000e+00
+G_z           7.91795842e-01
+K1            1.00000000e+00
+lambda        1.00000000e+00
+n_p           0.00000000e+00
+N_pins        0
+f_p           3.00000000e-02
+r_p           5.00000000e-01
+F_D           0.00000000e+00
+drive_angle   0.00000000e+00
+t_max         1.00000000e+03
+n_samples     201
+vx_avg        2.39687874e-11
+vy_avg        -7.22008222e-10
+vmag_avg      7.22405963e-10
+theta_H_deg   -8.80986280e+01

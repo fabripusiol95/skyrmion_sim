@@ -1,0 +1,73 @@
+
+#
+
+## ***************************************************************************
+## * FONT                                                                    *
+## ***************************************************************************
+font.family: sans-serif
+font.sans-serif: Inter # label font: Roboto, TeX Gyre Heros, Liberation Sans, IBM Plex Sans
+font.size: 9
+
+
+## ***************************************************************************
+## * TEXT                                                                    *
+## ***************************************************************************
+text.usetex: False
+
+
+## ***************************************************************************
+## * AXES                                                                    *
+## ***************************************************************************
+axes.labelsize: 10  # font size of the x and y labels
+axes.titlesize: 10   # font size of the axes title
+#axes.linewidth: 0.8 # edge line width
+axes.unicode_minus: False
+
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+xtick.labelsize: 8  # font size of the tick labels
+xtick.direction: out     # direction: {in, out, inout}
+xtick.major.width: 0.5     # major tick width in points
+xtick.major.size: 2     # major tick size in points
+xtick.minor.width: 0.5     # major tick width in points
+
+ytick.labelsize: 8  # font size of the tick labels
+ytick.direction: out     # direction: {in, out, inout}
+ytick.major.width: 0.5     # major tick width in points
+ytick.major.size: 2     # major tick size in points
+ytick.minor.size: 2
+
+## ***************************************************************************
+## * LEGEND                                                                  *
+## ***************************************************************************
+legend.fontsize: 8
+
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+figure.dpi: 300       # figure dots per inch
+
+
+## ***************************************************************************
+## * LaTeX                                                                   *
+## ***************************************************************************
+mathtext.fontset: custom #  TeX Gyre Heros Latin Modern Roman #TexMaths Symbols TeX Gyre Termes :italic
+mathtext.it : STIXGeneral:italic
+mathtext.rm : STIXGeneral
+##mathtext.it : Inter:italic
+##mathtext.rm : STIXGeneral
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+#grid.color:     "white"  # grid color
+
+
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+## ***************************************************************************
+savefig.dpi: 600      # figure dots per inch or 'figure'
+savefig.bbox: tight   # {tight, standard}
