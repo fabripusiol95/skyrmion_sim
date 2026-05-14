@@ -9,7 +9,7 @@ trap 'rm -f "$TMP_CONF"' EXIT
 
 mkdir -p ../results/depinning
 
-for FD in $(seq -f "%.4f" 0 0.0005 0.001); do
+for FD in $(seq -f "%.4f" 0 0.0005 0.01); do
     TAG="Force_F_D_${FD}"
     echo "Running F_D = ${FD}  →  run_tag = ${TAG}"
 

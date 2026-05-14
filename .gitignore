@@ -1,2 +1,5 @@
 results/
-depinning
+build/
+Skymrion-sim.ipynb
+wget-log
+tests/

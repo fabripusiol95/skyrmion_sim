@@ -1,4 +1,4 @@
-# Skyrmion Simulation
+# Skyrmions on Random Pinning
 
 GPU-accelerated 2D skyrmion dynamics simulator based on the overdamped Thiele equation,
 implementing the model from [Reichhardt & Reichhardt, PRB 99, 104418 (2019)](https://link.aps.org/doi/10.1103/PhysRevB.99.104418).
@@ -22,7 +22,16 @@ where `α` is the damping coefficient, `G = G_z ẑ` is the gyrovector, and the 
 
 ## Building
 
-1. On the HPC cluster, run the script `build.sh` to compile the program. In the script, modify the loaded modules if necessary:
+Option 1. To build manually with a custom CUDA architecture:
+
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES=86
+make -j$(nproc)
+```
+
+Option 2. Run the script `build.sh` to compile the program. For running on an HPC cluster, modify the loaded modules and CUDA architecture if necessary:
+
 ```bash
 module load gcc/8.2.0
 module load cuda/11.4.0
@@ -30,15 +39,7 @@ module load cmake-3.19.2-gcc-8.2.0
 ```
 
 ```bash
-bash build.sh # load modules, cleans, configures, and compiles in Release mode
-```
-
-2. To build manually with custom CUDA architecture:
-
-```bash
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES=86
-make -j$(nproc)
+bash build.sh # loads modules, cleans, configures, and compiles in Release mode
 ```
 
 CMake options:
@@ -248,6 +249,6 @@ skyrmion_sim/
 │   └── rng.cu           cuRAND wrapper
 ├── include/             matching headers + state.h, precision.h
 ├── inputs/              example .conf files
-├── scripts/             Python analysis and sweep scripts
+├── scripts/             Python plots and sweep scripts
 └── build.sh             one-shot build helper
 ```
