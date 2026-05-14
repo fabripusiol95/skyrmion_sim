@@ -219,7 +219,7 @@ patching the base config via `sed` for each point:
 bash scripts/run_sweep.sh
 ```
 
-Results land in `results/depinning/`, one set of four output files per `F_D` value.
+Results land in `results/depinning/`.
 
 ---
 
