@@ -3,3 +3,4 @@ build/
 Skymrion-sim.ipynb
 wget-log
 tests/
+.vscode/
